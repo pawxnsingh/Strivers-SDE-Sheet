@@ -25,7 +25,7 @@ vector<vector<int>> mergeIntervals(vector<vector<int>> &intervals){
             if(sstart <= end){
                 end = max(end,intervals[j][1]);
             }
-            else{;
+            else{
                 break;
             }
         }   
