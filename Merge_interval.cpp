@@ -10,11 +10,8 @@ using namespace std;
 
 
 /*
-    Time Complexity :- nLogn(sorting) + o(n^2)(Not Actually Taking N2 + 
-    
-    
-
-
+    Time Complexity :- nLogn(sorting) + o(n^2)(Not Actually Taking N2 
+    Space Complexity :- O(N);
 */
 
 vector<vector<int>> mergeIntervals(vector<vector<int>> &intervals){
@@ -43,6 +40,9 @@ vector<vector<int>> mergeIntervals(vector<vector<int>> &intervals){
     return ans;
 }
 
+
+// Time Complexity :- O(NlogN) + O(N)
+// Space Complexity :- O(N) 
 
 
 vector<vector<int>> mergeIntervals(vector<vector<int>> &intervals){
