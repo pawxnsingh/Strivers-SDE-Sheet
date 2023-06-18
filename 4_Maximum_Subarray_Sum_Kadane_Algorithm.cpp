@@ -47,7 +47,37 @@
 	
 // Optimal ------------ > Kadane Algorithm 
 
-	
+Time ----------> O(N)
+Space --------->>>>>>> O(1)	
+
+	#include <bits/stdc++.h> 
+	long long maxSubarraySum(int arr[], int n){
+
+	    long long maxi = LONG_MIN;
+	    long long sum = 0;
+	    int start = -1;
+	    int startInd = -1;
+	    int endInd = -1;
+	    for(int i = 0 ; i < n ; i++){
+
+		if(sum == 0 ) {
+		    start = i;
+		}
+
+		sum = sum + arr[i];
+
+		if(sum > maxi){
+		    maxi = sum;
+		    startInd = start;
+		    endInd = i;
+		}
+
+		if(sum < 0){
+		    sum = 0;
+
+		}
+
+
 
 
 
