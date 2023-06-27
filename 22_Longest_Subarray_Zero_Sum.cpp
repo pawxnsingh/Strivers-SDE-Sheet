@@ -14,11 +14,10 @@ Brute -------------->>>> O(N^3)
                 for(int k=i;k<=j;k++)
                 {
                     sum+=arr[k];
-                    if(sum == 0)
-                    {
-                        largeCount = max(largeCount,j-i+1);
-                    }
                 }
+              
+                if(sum == 0) largeCount = max(largeCount,j-i+1);
+              
             }
         }
         return largeCount;
