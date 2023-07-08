@@ -1,3 +1,19 @@
+intuition ---------->>>>
+    slow = l1 + l2
+    fast = l1 + l2 + nC
+    fast pointer travel twice the slow pointer
+
+    2(L1+L2) = L1 + L2 + NC
+    L1 + L2 = nC
+        L1 = nC - L2
+        Rest of the distance can be covered by l1
+    
+
+
+
+
+
+
 BruteForce-------------->>>>>>>>
     Time -------------->>>> O(N)
     Space ------------->>>> O(N)
