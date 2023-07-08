@@ -36,20 +36,21 @@ Optimal --------------------->>>>>
             
             Node *slow = head;
             Node *fast = head;
+            Node *entry = head;
+
             
             while(slow != NULL && fast != NULL && fast-> next != NULL)
             {
                 slow = slow -> next;
                 fast = fast -> next -> next;
-                if(fast == slow) break;
-            }
-            
-            Node *entry = head;
-            while(entry != NULL && slow != NULL )
-            {
-                if(slow == entry) return entry;
-                slow = slow-> next;
-                entry = entry -> next;
+                if(fast == slow){
+                    while(entry != slow)
+                    {
+                    slow = slow-> next;
+                    entry = entry -> next;
+                    }
+                }
+                return entry;
             }
             return NULL;
         }
