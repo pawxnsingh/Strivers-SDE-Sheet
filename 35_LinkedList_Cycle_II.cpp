@@ -46,8 +46,8 @@ Optimal --------------------->>>>>
                 if(fast == slow){
                     while(entry != slow)
                     {
-                    slow = slow-> next;
-                    entry = entry -> next;
+                        slow = slow-> next;
+                        entry = entry -> next;
                     }
                 }
                 return entry;
